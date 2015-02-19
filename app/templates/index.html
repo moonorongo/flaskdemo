@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+      <h1>Hello, {{ user.nickname }}!</h1>
+      <ul>
+        {% for post in user.lista %}
+        <li>{{ post }}</li>
+        {% endfor %}
+      </ul>
+{% endblock %}
+
+
+{% block scripts %}
+<div> unos scripts que hacen algo</div>
+{% endblock %}
